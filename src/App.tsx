@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
+import { IonApp, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import Search from './pages/Search'
@@ -24,30 +24,56 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { heart, home, mailOutline, pencil, searchOutline, videocamOutline } from 'ionicons/icons';
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
+    <IonReactRouter >
+    <IonTabs >
       <IonRouterOutlet>
         <Route exact path="/home">
-          <Main value="Explore" />
+          <Home />
         </Route>
         <Route exact path="/search">
-          <Main value="Search" />
+          <Search />
         </Route>
-        <Route exact path="/main">
-          <Main value="Explore" />
-        </Route>
+       
         <Route exact path="/plan">
-        <Main value="Plan" />
+            <Plan />
         </Route>
         <Route exact path="/review">
-        <Main value="Review" />
+          <Review />
         </Route>
         <Route exact path="/">
-          <Redirect to="/main" />
+          <Redirect to="/home" />
         </Route>
       </IonRouterOutlet>
+
+
+    
+      <IonTabBar slot="bottom" style={{
+        Width: '414px',
+        
+        justifyContent: 'center'
+      }}>
+      <IonTabButton tab="explore" href="/home">
+        <IonIcon icon={home} />
+        <IonLabel>Explore</IonLabel>
+      </IonTabButton>
+      <IonTabButton tab="search" href="/search">
+        <IonIcon icon={searchOutline} />
+        <IonLabel>Search</IonLabel>
+      </IonTabButton>
+      <IonTabButton tab="Plan" href="/plan">
+        <IonIcon icon={heart} />
+        <IonLabel>Plan</IonLabel>
+      </IonTabButton>
+      <IonTabButton tab="review" href="/review">
+        <IonIcon icon={pencil} />
+        <IonLabel>Review</IonLabel>
+      </IonTabButton>
+    </IonTabBar>
+    </IonTabs>
     </IonReactRouter>
   </IonApp>
 );
