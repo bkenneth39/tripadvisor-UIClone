@@ -8,17 +8,17 @@
         },{
             "id": "2",
             "title": "Things to do",
-            "width": "140px",
+            "width": "160px",
             "imgurl" : "ticket.svg"
         },{
             "id": "3",
             "title": "Restaurants",
-            "width": "130px",
+            "width": "140px",
             "imgurl" : "restaurant.svg"
         },{
             "id": "4",
             "title": "Forums",
-            "width": "100px",
+            "width": "105px",
             "imgurl" : "chat.svg"
         }
     ], 
