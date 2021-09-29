@@ -1,0 +1,101 @@
+.imageCity{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .cardWrapper{
+    height: 130px;
+} */
+.titleCard{
+    font-size: 24px;
+}
+
+.descCity{
+    font-size: 16px;
+}
+.attractionTitle{
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.cityCard{
+    height: 130px
+}
+.imageWrapper{
+    width: 130px;
+    height: 130px;
+}
+
+.searchInput{
+    border: solid #595959; 
+    border-radius: 35px;
+    
+}
+
+@media(prefers-color-scheme: light){
+    .searchInput{
+        border: none;
+    }
+}
+
+.searchbar-input {
+    border-radius: 35px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+ion-searchbar{
+    border-radius: 35px;
+    box-shadow: none;
+    
+}
+
+@media (max-width: 400px){
+    .imageCity{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .titleCard{
+        font-size: 16px;
+    }
+    .cityCard{
+        height: 100px
+    }
+
+    .descCity{
+        font-size: 12px;
+    }
+    .attractionTitle{
+        font-size: 16px;
+    }
+    .imageWrapper{
+        min-width: 130px;
+        min-height: 130px;
+    }
+    /* .cardWrapper{
+        height: 100px;
+    } */
+}
+@media(max-width: 360px){
+   
+    .cardWrapper{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .imageWrapper{
+        min-width: 110px;
+        min-height: 110px;
+    }
+}
+
+IonPage::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+IonPage {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

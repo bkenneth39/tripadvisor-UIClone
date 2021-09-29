@@ -1,0 +1,35 @@
+.imageWrappers{
+    min-width: 300px;
+    height: 150px;
+    background-image: url('https://media.istockphoto.com/vectors/doodles-summer-vacation-set-ocean-and-sea-trip-doodles-vector-id1057500552');
+   
+    background-size: cover;
+   display: flex;
+
+}
+
+.imageWrappers2{
+    min-width: 300px;
+    height: 150px;
+    background-image: url('https://previews.123rf.com/images/onyxprj/onyxprj1808/onyxprj180800530/111766199-vector-hipster-doodle-icons-background-or-pattern-illustration-hipster-pattern-with-sunglasses-and-c.jpg');
+   
+    background-size: cover;
+   display: flex;
+
+}
+
+.button{
+    margin: auto;
+    --background: white;
+    --color: black;
+}
+
+@media (max-width: 300px){
+    .imageWrapper{
+        min-width: 200px;
+       
+    }
+    .imageWrapper2{
+        min-width: 200px;
+    }
+}

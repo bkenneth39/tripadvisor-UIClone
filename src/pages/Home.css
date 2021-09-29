@@ -1,0 +1,137 @@
+.img-profile{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    flex: 0 0 1%;
+  text-align:right;
+}
+.header{
+    
+    
+}
+
+
+.boxHome{
+    height: 60%;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/626/129/small_2x/Night_silhouette_of_buildings_with_colorful_windows__full_moon_stars__cartoon_style.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    display: block;
+}
+
+.buttonWhite{
+    --background: white;
+    --color: black;
+}
+
+@media (prefers-color-scheme: light) {
+    .boxHome{
+        height: 60%;
+        background-image: url('https://thumbs.dreamstime.com/b/panorama-city-afternoon-beautiful-sky-collection-vector-173810658.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+        display: block;
+    }
+  }
+
+.headerImageGiant{
+    margin-top: 10vh;
+}
+.titleCard{
+    color: white;
+    font-size: 2rem;
+}
+
+@media (min-height: 900px){
+    .boxHome{
+        height: 550px;
+    }
+    .giantImage{
+        height: 550px;
+        
+    }
+    .giantImage IonCard{
+        height: 35vh
+    }
+}
+
+@media (max-width: 330px){
+    .headerImageGiant{
+        margin: 0px 0px 0;
+       
+    }
+    .titleCard{
+        font-size: 1.5rem;
+    }
+}
+
+.header-box{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-weight:500;
+    width: 100%;
+    
+}
+
+.title-mini-card {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.desc-mini-card {
+    font-size: 12px;
+    color: #212121;
+}
+
+.margin-mini-card {
+   
+    display: inline-flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.overflow-mini-card {
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.overflow-big-card{
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.overflow-mini-card::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-big-card::-webkit-scrollbar {
+    display: none;
+}
+.overflowbox{
+    width:250px;
+}
+
+.overflowboxbig{
+    width:500px;
+}
+
+.imgBox{
+    text-align: right;
+    vertical-align:center;
+    width: 100%;
+    justify-self: flex-end;
+   
+}
+

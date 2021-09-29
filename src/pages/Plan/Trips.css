@@ -1,0 +1,33 @@
+.iconTrip{
+    width: 30px;
+    height: 30px;
+   
+    border-radius: 15px;
+  
+    background-color: #262626;
+}
+
+.iconini{
+    margin-left: 7.5px;
+    margin-top: 7.5px;
+}
+.row{
+    margin-top: 3vh;
+}
+
+.inputWords{
+    border: solid #595959;
+}
+
+@media (prefers-color-scheme: light) {
+    .iconini{
+       color: white;
+       
+    }
+    .iconTrip{
+        background-color: #00af87;
+    }
+    .inputWords{
+        border: solid #b3b3b3;
+    }
+  }

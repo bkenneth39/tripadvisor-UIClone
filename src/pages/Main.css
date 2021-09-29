@@ -1,0 +1,32 @@
+.icon{
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.ios {
+  
+  --color-checked: #00af87; 
+  --indicator-box-shadow: none;
+
+  --indicator-color: transparent;
+  
+
+}
+
+@media(prefers-color-scheme: light){
+  .segmentMain{
+    --background: white;
+  }
+}
+
+IonPage::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+IonPage {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
